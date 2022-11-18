@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Sign In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="fb.png" alt="Facebook">
+                <img src="tw.png" alt="Tweeter">
+                <img src="ig.png" alt="Instagram">
+                <img src="tik.png" alt="TikTok">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Your Name" required>
+                <input type="email" class="input-field" placeholder="Enter Your Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <div>
+                    <input type="checkbox" class="check-box" required><span>Remember Password</span>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Your Name" required>
+                <input type="email" class="input-field" placeholder="Enter Your Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <div><input type="checkbox" class="check-box" required><span>Agree to Terms and Conditions</span></div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        <div id="clock" class="digitalclock"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
